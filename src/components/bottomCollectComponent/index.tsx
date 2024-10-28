@@ -5,11 +5,11 @@ import './bottomCollectComponent.scss'
 
 //image
 import img1 from '@/images/image1.svg'
-import figure1  from '@/images/figure1.svg'
+import figure1 from '@/images/figure1.svg'
 import img2 from '@/images/image2.svg'
-import figure2  from '@/images/figure2.svg'
+import figure2 from '@/images/figure2.svg'
 import img3 from '@/images/image3.svg'
-import figure3  from '@/images/figure3.svg'
+import figure3 from '@/images/figure3.svg'
 
 export default function BottomCollectComponent() {
 
@@ -36,9 +36,9 @@ export default function BottomCollectComponent() {
 
     return (
         <div className='bottomCollectComponent container-fluid d-flex justify-content-between'>
-            {arr.map((el: any) => {
+            {arr.map((el: any, index: number) => {
                 return (
-                    <div>
+                    <div key={index}>
                         <Image className='figure' src={el.figure} alt='figure' />
                         <Image className='image' src={el.image} alt='image' />
                         <h3>{el.title}</h3>
