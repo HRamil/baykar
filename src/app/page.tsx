@@ -1,9 +1,9 @@
-import Header from "@/components/header";
+import SneakersPart from "@/components/sneakersPart";
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <SneakersPart />
     </div>
   );
 }
