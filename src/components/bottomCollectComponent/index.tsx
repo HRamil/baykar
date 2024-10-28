@@ -36,9 +36,9 @@ export default function BottomCollectComponent() {
 
     return (
         <div className='bottomCollectComponent container-fluid d-flex justify-content-between'>
-            {arr.map((el: any, index: number) => {
+            {arr.map((el: any) => {
                 return (
-                    <div key={index}>
+                    <div key={el.title}>
                         <Image className='figure' src={el.figure} alt='figure' />
                         <Image className='image' src={el.image} alt='image' />
                         <h3>{el.title}</h3>

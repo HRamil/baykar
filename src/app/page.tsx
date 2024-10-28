@@ -1,4 +1,5 @@
 import BestOfBest from "@/components/bestOfBest";
+import SliderComponents from "@/components/sliderComponents";
 import SneakersPart from "@/components/sneakersPart";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <SneakersPart />
       <BestOfBest />
+      <SliderComponents />
     </div>
   );
 }
