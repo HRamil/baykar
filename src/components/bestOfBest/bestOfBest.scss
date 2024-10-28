@@ -1,0 +1,90 @@
+.bestOfBest {
+    padding: 5.5556vw 0;
+    background: rgba(15, 23, 42, 1);
+
+    .title {
+        margin-bottom: 3.402778vw;
+
+        h2 {
+            font-family: Roboto;
+            font-size: 3.8889vw;
+            font-weight: 800;
+            line-height: 4.2778vw;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .btn {
+            width: 16.18055vw;
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            height: 4.444vw;
+        }
+    }
+
+    .bg {
+        padding: 2.1528vw 0 1.666vw 0;
+        background: url('../../images/bestOfBestBg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: calc(100% - 82px);
+        background-position: 45px center;
+
+        .card {
+            background: rgba(15, 23, 42, 1);
+            border: 1px solid rgba(15, 23, 42, 1);
+            box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+            box-shadow: 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
+
+            >img {
+                width: 100%;
+                object-fit: cover;
+                margin-bottom: 1.111vw;
+            }
+
+            .card-body {
+
+                >h5 {
+                    color: rgba(255, 255, 255, 1);
+                    margin-bottom: 1.111vw;
+                    font-family: Roboto;
+                    font-size: 1.6667vw;
+                    font-weight: 700;
+                    line-height: 1.8333vw;
+                }
+
+                >p {
+                    color: rgba(255, 255, 255, 1);
+                    margin-bottom: 2.222vw;
+                    font-size: 1.25vw;
+                    font-weight: 400;
+                    line-height: 2vw;
+                }
+
+                .btn {
+                    margin-bottom: 1.111vw;
+                    gap: 1.111vw;
+                    border: 2px solid rgba(255, 255, 255, 1);
+                    padding: 1.111vw 0;
+
+                    img {
+                        width: 1.6667vw;
+                        height: 1.6667vw;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: rgba(255, 255, 255, 1);
+                        font-family: Roboto;
+                        font-size: 1.38889vw;
+                        font-weight: 500;
+                        line-height: 1.6667vw;
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+        }
+    }
+}
