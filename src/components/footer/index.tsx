@@ -10,6 +10,7 @@ import facebook from '@/images/facebook.svg'
 import twitter from '@/images/twitter.svg'
 import instagram from '@/images/instagram.svg'
 import linkedin from '@/images/linkedin.svg'
+import world from '@/images/world.svg'
 
 export default function Footer() {
     return (
@@ -101,6 +102,20 @@ export default function Footer() {
                         <Link href={'/'}>
                             <Image src={linkedin} alt='linkedin' />
                         </Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container d-flex justify-content-between copyright align-items-center">
+                <p>Collers @ 2023. All rights reserved.</p>
+
+                <div className="bottomLinks d-flex align-items-center">
+                    <Link href={'/'}>Terms</Link>
+                    <Link href={'/'}>Privacy</Link>
+                    <Link href={'/'}>Contact</Link>
+                    <div className="language d-flex align-items-center">
+                        <Image src={world} alt='world' />
+                        <p>EN</p>
                     </div>
                 </div>
             </div>
