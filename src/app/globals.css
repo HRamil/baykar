@@ -1,6 +1,6 @@
 .container-fluid {
   width: 100% !important;
-  padding:0 4.071vw;
+  padding: 0 4.071vw;
 }
 
 @media (min-width: 900px) {
@@ -8,5 +8,5 @@
     width: 89vw !important;
     padding: 0;
   }
-  
+
 }
