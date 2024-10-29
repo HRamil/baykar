@@ -1,0 +1,62 @@
+footer {
+    background: rgba(15, 23, 42, 1);
+
+    .container {
+        grid-gap: 3.33vw;
+
+        &.links {
+            padding: 4.16667vw 0 3.9583vw 0;
+
+            .col {
+                h3 {
+                    font-family: Roboto;
+                    font-size: 1.111vw;
+                    padding: 0.8333vw 0;
+                    font-weight: 500;
+                    line-height: 1.222vw;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                >a {
+                    display: block;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    padding: 0.8333vw 0;
+                    font-size: 1.111vw;
+                    font-weight: 400;
+                    line-height: 1.5555vw;
+                    color: rgba(226, 232, 240, 1);
+                }
+
+                .storeButtons {
+                    flex-direction: column;
+                    gap: 0.8333vw;
+                    margin-bottom: 3.8889vw;
+
+                    img {
+                        height: 3.1944vw;
+                    }
+                }
+
+                h4 {
+                    font-family: Roboto;
+                    font-size: 1.111vw;
+                    padding: 0.8333vw 0;
+                    font-weight: 500;
+                    line-height: 1.222vw;
+                    color: rgba(226, 232, 240, 1);
+                }
+
+                .soicalLink{
+                    gap: 1.111vw;
+                    a{
+                        img{
+                            width: 1.66667vw;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
