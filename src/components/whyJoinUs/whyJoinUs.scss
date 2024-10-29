@@ -1,0 +1,108 @@
+.whyJoinUs {
+    padding: 11.111vw 0;
+    background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
+
+    .container-fluid {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+        padding: 5.06944vw 5.5556vw;
+        border-radius: 2.0833vw;
+
+        .text {
+            flex-direction: column;
+            gap: 1.6667vw;
+
+            h4 {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 61.6px;
+                color: rgba(15, 23, 42, 1);
+            }
+
+            .btn {
+                width: 12.43056vw;
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: rgba(120, 53, 15, 1);
+                border: 2px solid rgba(120, 53, 15, 1);
+                border-radius: 0.5556vw;
+                padding: 1.11vw;
+            }
+        }
+
+        .images {
+            position: relative;
+
+            >img {
+                position: absolute;
+
+                &.brown {
+                    width: 6.25vw;
+                    height: 6.25vw;
+                    top: 1.7361vw;
+                    left: -1.388vw;
+                }
+
+                &.rectangle {
+                    width: 46.26944vw;
+                    height: auto;
+                    top: -9.24931vw;
+                    right: -2.1vw;
+                }
+
+                &.blue {
+                    height: 4.1667vw;
+                    width: auto;
+                    top: -6.9444vw;
+                    right: 2vw;
+                }
+
+                &.purple {
+                    bottom: -0.555vw;
+                    right: 5.65vw;
+                    width: 5.1388vw;
+                    height: 5.1388vw;
+                }
+
+                &.pink {
+                    right: -6.9444vw;
+                    bottom: -7.56944vw;
+                    width: 15.1388vw;
+                    height: 15.1388vw;
+                }
+
+                &.green {
+                    z-index: 99;
+                    bottom: 0;
+                    left: 4.861111vw;
+                    width: 5.90278vw;
+                    height: auto;
+                }
+            }
+
+            .video {
+                z-index: 9;
+                position: relative;
+
+                .screen {
+                    object-fit: cover;
+                    width: auto;
+                    height: 24.30556vw;
+                }
+
+                .icon {
+                    position: absolute;
+                    cursor: pointer;
+                    width: 10vw;
+                    left: 50%;
+                    top: 52%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
