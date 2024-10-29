@@ -1,26 +1,27 @@
 .choosenSneakers {
-    padding: 5.5556vw 0;
+    padding: 12.21374vw 0;
 
     .container-fluid {
         align-items: center;
+        flex-direction: column;
 
         .imagesPart {
             position: relative;
-            padding-bottom: 2.431vw;
+            padding-bottom: 6.6158vw;
 
             .images {
                 position: absolute;
-                left: 3.54167vw;
+                left: 9.6387vw;
                 bottom: 0;
-                width: 25.4861vw;
-                height: 25.833vw;
+                width: 69.3664vw;
+                height: 70.31043vw;
                 border-radius: 3.4722vw;
                 background: rgba(251, 191, 36, 1);
             }
-            
+
             img {
                 position: relative;
-                width: 33.75vw;
+                width: 91.8575vw;
                 height: auto;
             }
         }
@@ -28,72 +29,137 @@
         .textPart {
             display: flex;
             flex-direction: column;
-            gap: 2.222vw;
-            width: 49.583vw;
+            gap: 8.14249vw;
+            width: 100%;
+            margin-bottom: 8.14249vw;
 
             h3 {
                 font-family: Roboto;
-                font-size: 5vw;
                 font-weight: 800;
-                line-height: 5.5vw;
-                color: rgba(15, 23, 42, 1);
+                text-align: center;
+                font-size: 14.249vw;
+                line-height: 15.6743vw;
             }
 
             p {
                 font-family: Roboto;
-                font-size: 1.25vw;
                 font-weight: 400;
-                line-height: 2vw;
+                text-align: center;
                 color: rgba(15, 23, 42, 1);
+                font-size: 4.58015vw;
+                line-height: 7.3282vw;
             }
 
             .buttons {
                 display: flex;
-                flex-direction: row;
                 align-items: center;
-                gap: 1.111vw;
+                gap: 4.0712vw;
 
-                .button {
+                .button, .watchVideo {
                     cursor: pointer;
-                    font-family: Roboto;
-                    font-size: 20px;
-                    font-weight: 500;
-                    line-height: 24px;
-                    letter-spacing: 0.5px;
-                    width: 12.431vw;
                     display: flex;
-                    flex-direction: row;
                     align-items: center;
                     justify-content: center;
-                    height: 3.8889vw;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                }
+
+                .button {
+                    width: 45.5471vw;
+                    height: 14.2493vw;
+                    font-size: 5.0891vw;
+                    line-height: 6.10687vw;
                     color: rgba(120, 53, 15, 1);
                     border: 2px solid rgba(120, 53, 15, 1);
-                    border-radius: 0.5556vw
+                    border-radius: 2.0356vw;
                 }
 
                 .watchVideo {
-                    width: 10.55vw;
-                    height: 3.333vw;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0.5556vw;
-                    cursor: pointer;
+                    width: 38.6768vw;
+                    height: 12.2137vw;
+                    gap: 2.0356vw;
 
                     p {
-                        font-size: 1.111vw;
-                        font-weight: 500;
-                        line-height: 1.6667vw;
-                        letter-spacing: 0.5px;
+                        font-size: 4.07125vw;
+                        line-height: 6.10687vw;
                         color: rgba(120, 53, 15, 1);
-                        align-items: center;
                         margin: 0;
                     }
 
                     img {
-                        width: 1.3889vw;
+                        width: 6.10687vw;
                         height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .choosenSneakers {
+        padding: 5.5556vw 0;
+
+        .container-fluid {
+            flex-direction: row;
+
+            .imagesPart {
+                padding-bottom: 2.431vw;
+
+                .images {
+                    left: 3.54167vw;
+                    width: 25.4861vw;
+                    height: 25.833vw;
+                    border-radius: 3.4722vw;
+                }
+
+                img {
+                    width: 33.75vw;
+                }
+            }
+
+            .textPart {
+                width: 49.583vw;
+                margin-bottom: 0;
+                gap: 2.222vw;
+
+                h3 {
+                    font-size: 5vw;
+                    line-height: 5.5vw;
+                    text-align: left;
+                }
+
+                p {
+                    font-size: 1.25vw;
+                    line-height: 2vw;
+                    text-align: left;
+                }
+
+                .buttons {
+                    gap: 1.111vw;
+
+                    .button {
+                        width: 12.431vw;
+                        height: 3.8889vw;
+                        font-size: 1.38889vw;
+                        line-height: 1.66667vw;
+                        border-radius: 0.5556vw;
+                    }
+
+                    .watchVideo {
+                        width: 10.55vw;
+                        height: 3.333vw;
+                        gap: 0.5556vw;
+
+                        p {
+                            font-size: 1.111vw;
+                            line-height: 1.6667vw;
+                        }
+
+                        img {
+                            width: 1.3889vw;
+                        }
                     }
                 }
             }
