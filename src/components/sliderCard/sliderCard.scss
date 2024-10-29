@@ -1,0 +1,68 @@
+.sliderCard {
+    width: 26.6667vw !important;
+    padding: 3.333vw 2.222vw 2.222vw 2.222vw;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(226, 232, 240, 1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin: 0 0.833vw;
+    flex-direction: column;
+
+    border-radius: 1.3889vw;
+    height: 29.8611vw;
+
+    .icon {
+        gap: 0.5556vw;
+        margin-bottom: 2.222vw;
+
+        img {
+            width: auto;
+            height: 2.222vw;
+        }
+
+        h4 {
+            font-family: Roboto;
+            font-size: 1.6667vw;
+            font-weight: 700;
+            line-height: 1.8333vw;
+            color: rgba(71, 85, 105, 1);
+            margin: 0;
+        }
+    }
+
+    p {
+        font-family: Roboto;
+        font-size: 1.6667vw;
+        font-weight: 400;
+        line-height: 2.6667vw;
+        color: rgba(0, 0, 0, 1);
+        margin: 0;
+        margin-bottom: 2.222vw;
+    }
+
+    .userProfile {
+        margin-top: auto;
+        gap: 1.111vw;
+
+        img {
+            width: 4.444vw;
+            height: 4.444vw;
+            border-radius: 50%;
+        }
+
+        h2 {
+            font-family: Roboto;
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 2vw;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        h3 {
+            font-family: Roboto;
+            font-size: 1.111vw;
+            font-weight: 400;
+            line-height: 1.5556vw;
+            color: rgba(71, 85, 105, 1);
+        }
+    }
+}
