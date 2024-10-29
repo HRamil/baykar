@@ -34,7 +34,13 @@ function NextArrow(props: any) {
     <button className="customArrow nextArrow" onClick={onClick}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
         <path d="M6 12H18.5H6ZM18.5 12L12.5 6L18.5 12ZM18.5 12L12.5 18L18.5 12Z" fill="#78350F" />
-        <path d="M18.5 12L12.5 18M6 12H18.5H6ZM18.5 12L12.5 6L18.5 12Z" stroke="#78350F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M18.5 12L12.5 18M6 12H18.5H6ZM18.5 12L12.5 6L18.5 12Z"
+          stroke="#78350F"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </button>
   );
@@ -46,7 +52,13 @@ function PrevArrow(props: any) {
     <button className="customArrow prevArrow" onClick={onClick}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
         <path d="M18.5 12H6H18.5ZM6 12L12 6L6 12ZM6 12L12 18L6 12Z" fill="#78350F" />
-        <path d="M6 12L12 18M18.5 12H6H18.5ZM6 12L12 6L6 12Z" stroke="#78350F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M6 12L12 18M18.5 12H6H18.5ZM6 12L12 6L6 12Z"
+          stroke="#78350F"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </button>
   );

@@ -1,0 +1,58 @@
+.collectionPart {
+    background-image: url('../../images/collection.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
+    padding: 5.5556vw 0 8.8889vw 0;
+
+    .title {
+        margin-bottom: 5.5556vw;
+
+        h4 {
+            font-family: Roboto;
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 61.6px;
+            color: rgba(15, 23, 42, 1);
+            margin-bottom: 2.222vw;
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 2vw;
+            color: rgba(15, 23, 42, 1);
+        }
+    }
+
+    .collection {
+        gap: 5.5556vw;
+
+        .images {
+            position: relative;
+
+            img {
+                width: 52.7083vw;
+                height: 31.31944vw;
+
+                &:nth-child(2) {
+                    z-index: 1;
+                    position: absolute;
+                    left: 6.52778vw;
+                    bottom: -7.29167vw;
+                }
+
+                &:nth-child(3) {
+                    z-index: 2;
+                    position: absolute;
+                    right: -12.84722vw;
+                    top: 14.027vw;
+                    width: 17.778vw;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
