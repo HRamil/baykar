@@ -1,9 +1,21 @@
 import Image from 'next/image'
 
-//style
+// style
 import './sliderCard.scss'
 
-export default function SliderCard(props: any) {
+interface SliderCardProps {
+    key: string | number;
+    data: {
+        icon: string;
+        title: string;
+        text: string;
+        img: string;
+        name: string;
+        role: string;
+    };
+}
+
+export default function SliderCard(props: SliderCardProps) {
     return (
         <div className='sliderCard d-flex' key={props.key}>
             <div className="icon d-flex align-items-center">
