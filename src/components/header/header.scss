@@ -1,19 +1,106 @@
 header {
     padding: 1.6667vw 0;
+    background-color: #fff7e6;
 
-    .btn {
-        width: 10.34722vw;
-        font-family: Roboto;
-        font-size: 1.11vw;
-        font-weight: 500;
-        line-height: 1.6667vw;
-        letter-spacing: 0.5px;
-        color: rgba(120, 53, 15, 1);
-        border: 2px solid rgba(120, 53, 15, 1);
-        outline: none;
+    .navbar {
+        font-family: Roboto, sans-serif;
+
+        .navbar-brand {
+            color: #693A00;
+            font-weight: bold;
+            font-size: 8.14249vw;
+        }
+
+        .nav-link {
+            color: #693A00;
+            font-size: 4.58015vw;
+            font-weight: 500;
+            margin-right: 1.11vw;
+        }
+
+        .btn {
+            width: 45.547vw;
+            font-size: 5.089vw;
+            font-weight: 500;
+            color: rgba(120, 53, 15, 1);
+            border: 2px solid rgba(120, 53, 15, 1);
+            border-radius: 5px;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgba(120, 53, 15, 0.1);
+        }
+
+        .navbar-toggler {
+            outline: none !important;
+            border: none !important;
+            box-shadow: none !important;
+        
+            &:focus,
+            &:active {
+                outline: none !important;
+                border: none !important;
+                box-shadow: none !important;
+            }
+            img {
+                width: 6.10687vw;
+                height: auto;
+            }
+        }
     }
+}
 
-    .d-flex {
-        gap: 1.11vw;
+@media (min-width: 900px) {
+    header {
+        padding: 1.6667vw 0;
+        background-color: #fff7e6;
+
+        .navbar {
+            font-family: Roboto, sans-serif;
+
+            .navbar-brand {
+                color: #693A00;
+                font-weight: bold;
+                font-size: 1.5vw;
+            }
+
+            .nav-link {
+                color: #693A00;
+                font-size: 1.11vw;
+                font-weight: 500;
+                margin-right: 1.11vw;
+            }
+
+            .nav-link.active {
+                font-weight: bold;
+            }
+
+            .btn {
+                width: 10.34722vw;
+                font-size: 1.11vw;
+                font-weight: 500;
+                color: rgba(120, 53, 15, 1);
+                border: 2px solid rgba(120, 53, 15, 1);
+                border-radius: 5px;
+                background-color: transparent;
+                transition: all 0.3s ease;
+            }
+
+            .btn:hover {
+                background-color: rgba(120, 53, 15, 0.1);
+            }
+
+            .navbar-toggler {
+                border-color: #693A00;
+            }
+
+            .navbar-toggler-icon {
+                background-image: none;
+                color: #693A00;
+                font-size: 1.5em;
+            }
+        }
     }
 }
