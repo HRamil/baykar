@@ -129,7 +129,7 @@ export default function SliderComponents() {
       <div className="slider-container">
         <div className="sliderBg"></div>
         <Slider {...settings}>
-          {slides.map((slide, index) => (
+          {slides.map((slide: any, index: number) => (
             <SliderCard data={slide} key={index} />
           ))}
         </Slider>
