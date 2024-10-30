@@ -2,6 +2,9 @@
   width: 100% !important;
   padding: 0 4.071vw;
 }
+body{
+  overflow-x: hidden;
+}
 
 @media (min-width: 900px) {
   .container-fluid {

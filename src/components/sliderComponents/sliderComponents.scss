@@ -19,7 +19,7 @@
 
     .title {
         margin-bottom: 8.14249vw;
-        text-align: center;
+        justify-content: center !important;
 
         h2 {
             font-family: Roboto;
@@ -46,7 +46,7 @@
 
         .title {
             margin-bottom: 5.5556vw;
-            text-align: left;
+            justify-content:space-between !important;
 
             h2 {
                 font-size: 3.8889vw;

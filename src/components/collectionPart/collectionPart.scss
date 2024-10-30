@@ -4,38 +4,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
-    padding: 5.5556vw 0 8.8889vw 0;
+    padding: 12.2137vw 0 24.428vw 0;
+    flex-direction: column;
 
     .title {
-        margin-bottom: 5.5556vw;
+        margin-bottom: 8.14249vw;
 
         h4 {
             font-family: Roboto;
-            font-size: 56px;
+            font-size: 8.14249vw;
             font-weight: 800;
-            line-height: 61.6px;
+            line-height: 8.9567vw;
             color: rgba(15, 23, 42, 1);
-            margin-bottom: 2.222vw;
+            margin-bottom: 8.14249vw;
+            text-align: center;
         }
 
         p {
             font-family: Roboto;
-            font-size: 1.25vw;
+            font-size: 4.07vw;
             font-weight: 400;
-            line-height: 2vw;
+            line-height: 5.6997vw;
             color: rgba(15, 23, 42, 1);
+            text-align: center;
         }
     }
 
     .collection {
         gap: 5.5556vw;
+        flex-direction: column;
 
         .images {
             position: relative;
 
             img {
-                width: 52.7083vw;
-                height: 31.31944vw;
+                width: 74.809vw;
+                height: 51.145vw;
 
                 &:nth-child(2) {
                     z-index: 1;
@@ -47,10 +51,75 @@
                 &:nth-child(3) {
                     z-index: 2;
                     position: absolute;
-                    right: -12.84722vw;
-                    top: 14.027vw;
-                    width: 17.778vw;
+                    right: 4.84722vw;
+                    top: 21.027vw;
+                    width: 23.92vw;
                     height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .collectionPart {
+        flex-direction: row;
+        background-image: url('../../images/collection.svg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
+        padding: 5.5556vw 0 8.8889vw 0;
+
+        .title {
+            margin-bottom: 5.5556vw;
+
+            h4 {
+                font-family: Roboto;
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 61.6px;
+                color: rgba(15, 23, 42, 1);
+                margin-bottom: 2.222vw;
+                text-align: left;
+            }
+
+            p {
+                font-family: Roboto;
+                font-size: 1.25vw;
+                font-weight: 400;
+                line-height: 2vw;
+                color: rgba(15, 23, 42, 1);
+                text-align: left;
+            }
+        }
+
+        .collection {
+            flex-direction: row;
+            gap: 5.5556vw;
+
+            .images {
+                position: relative;
+
+                img {
+                    width: 52.7083vw !important;
+                    height: 31.31944vw !important;
+
+                    &:nth-child(2) {
+                        z-index: 1;
+                        position: absolute;
+                        left: 6.52778vw;
+                        bottom: -7.29167vw;
+                    }
+
+                    &:nth-child(3) {
+                        z-index: 2;
+                        position: absolute;
+                        right: -12.84722vw ;
+                        top: 14.027vw ;
+                        width: 17.778vw !important;
+                        height: auto;
+                    }
                 }
             }
         }

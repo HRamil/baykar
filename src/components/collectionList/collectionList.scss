@@ -1,37 +1,39 @@
 .collectionList {
     display: flex;
-    flex-direction: column;
-    gap: 1.111vw;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 4.07vw;
+    margin-bottom: 8.14249vw;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     >div {
-        width: 17.7778vw;
-        padding: 1.111vw;
-        border-radius: 0.5556vw;
+        width: 66.0687vw;
+        padding: 4.07vw;
+        border-radius: 2.0356vw;
         cursor: pointer;
 
         &.active {
             background: rgba(255, 255, 255, 1);
             box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
-
-            .arrow{
-                display: block;
-            }
         }
 
         >div {
-            gap: 1.111vw;
+            gap: 4.07vw;
 
             .icon {
-                width: 1.6667vw;
+                width: 6.10687vw;
                 height: auto;
             }
 
             p {
                 font-family: Roboto;
-                font-size: 1.3889vw;
+                font-size: 5.089vw;
                 font-weight: 500;
-                line-height: 1.6667vw;
+                line-height: 6.10687vw;
                 letter-spacing: 0.5px;
                 color: rgba(15, 23, 42, 1);
                 margin: 0;
@@ -39,8 +41,58 @@
         }
 
         .arrow {
-            width: 1.6667vw;
+            width: 6.10687vw;
             display: none;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .collectionList {
+        display: flex;
+        flex-direction: column;
+        gap: 1.111vw;
+
+
+        >div {
+            max-width: 17.7778vw !important;
+            padding: 1.111vw;
+            border-radius: 0.5556vw;
+            cursor: pointer;
+
+            &.active {
+                background: rgba(255, 255, 255, 1);
+                box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07);
+                box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+                .arrow {
+                    display: block;
+                }
+            }
+
+            >div {
+                gap: 1.111vw;
+
+                .icon {
+                    width: 1.6667vw;
+                    height: auto;
+                }
+
+                p {
+                    font-family: Roboto;
+                    font-size: 1.3889vw;
+                    font-weight: 500;
+                    line-height: 1.6667vw;
+                    letter-spacing: 0.5px;
+                    color: rgba(15, 23, 42, 1);
+                    margin: 0;
+                }
+            }
+
+            .arrow {
+                width: 1.6667vw;
+                display: none;
+            }
         }
     }
 }
