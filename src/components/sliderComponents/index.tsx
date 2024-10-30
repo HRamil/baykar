@@ -27,8 +27,11 @@ interface Slides {
   role: string
 }
 
-function NextArrow(props: any) {
-  const { onClick } = props;
+interface ArrowProps {
+  onClick?: () => void;
+}
+
+function NextArrow({ onClick }: ArrowProps) {
   return (
     <button className="customArrow nextArrow" onClick={onClick}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -45,8 +48,7 @@ function NextArrow(props: any) {
   );
 }
 
-function PrevArrow(props: any) {
-  const { onClick } = props;
+function PrevArrow({ onClick }: ArrowProps) {
   return (
     <button className="customArrow prevArrow" onClick={onClick}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -81,7 +83,7 @@ export default function SliderComponents() {
         settings: {
           slidesToShow: 1,
         }
-      },]
+      }]
   };
 
   const slides: Slides[] = [
@@ -137,7 +139,7 @@ export default function SliderComponents() {
       <div className="slider-container">
         <div className="sliderBg"></div>
         <Slider {...settings}>
-          {slides.map((slide: any, index: number) => (
+          {slides.map((slide: Slides, index: number) => (
             <SliderCard data={slide} key={index} />
           ))}
         </Slider>
