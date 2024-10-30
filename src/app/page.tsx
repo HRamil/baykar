@@ -1,10 +1,9 @@
 import BestOfBest from "@/components/bestOfBest";
 import CollectionPart from "@/components/collectionPart";
-// import ShoesCollected from "@/components/shoesCollected";
-// import ShoesCollectedMap from "@/components/shoesCollectedMap";
 import SliderComponents from "@/components/sliderComponents";
 import SneakersPart from "@/components/sneakersPart";
 import WhyJoinUs from "@/components/whyJoinUs";
+import WorldMap from "@/components/worldMap";
 
 export default function Home() {
   return (
@@ -14,8 +13,7 @@ export default function Home() {
       <WhyJoinUs />
       <SliderComponents />
       <CollectionPart />
-      {/* <ShoesCollected />
-      <ShoesCollectedMap /> */}
+      <WorldMap />
     </div>
   );
 }

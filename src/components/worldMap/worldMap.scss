@@ -1,0 +1,104 @@
+.worldMap {
+    background: rgba(120, 53, 15, 1);
+    padding: 10.677vw 0;
+    position: relative;
+    overflow-x: scroll;
+
+    .map {
+        position: relative;
+        width: 266.06vw;
+        margin: auto;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .svg {
+        pointer-events: none;
+    }
+
+    .checkpoint {
+        z-index: 99;
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(163, 230, 53, 1);
+        border-radius: 50%;
+
+        &.active {
+            background: rgba(217, 249, 157, 1);
+        }
+    }
+
+    .countText {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .worldMap {
+        background: rgba(120, 53, 15, 1);
+        padding: 2.9166vw 0;
+        position: relative;
+
+        .map {
+            position: relative;
+            width: 72.847vw;
+            margin: auto;
+
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .svg {
+            pointer-events: none;
+        }
+
+        .checkpoint {
+            z-index: 99;
+            cursor: pointer;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(163, 230, 53, 1);
+            border-radius: 50%;
+
+            &.active {
+                background: rgba(217, 249, 157, 1);
+            }
+        }
+
+        .countText {
+            display: block;
+            z-index: 9;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .count {
+                font-family: Roboto;
+                font-size: 6.6666vw;
+                font-weight: 800;
+                line-height: 7.3333vw;
+                text-align: center;
+                color: rgba(255, 251, 235, 1);
+                margin-bottom: 0.5556vw;
+            }
+
+            .text {
+                font-family: Roboto;
+                font-size: 3.8889vw;
+                font-weight: 800;
+                line-height: 4.277vw;
+                text-align: center;
+                color: rgba(255, 251, 235, 1);
+            }
+        }
+    }
+}
