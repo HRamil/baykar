@@ -44,7 +44,7 @@ export default function BestOfBest() {
             <div className='bg'>
                 <div className="container-fluid d-flex justify-content-between">
                     {arr.map((el, index) => (
-                        <div className="card" style={{ width: '27.4076vw' }} key={index}>
+                        <div className="card"key={index}>
                             <Image src={el.image} className="card-img-top" alt={el.title} />
                             <div className="card-body">
                                 <h5 className="card-title">{el.title}</h5>

@@ -1,87 +1,197 @@
 .bestOfBest {
-    padding: 5.5556vw 0;
+    padding: 12.213vw 0;
     background: rgba(15, 23, 42, 1);
 
     .title {
-        margin-bottom: 3.402778vw;
+        margin-bottom: 8.14249vw;
+        flex-direction: column;
+        gap: 8.14249vw;
 
         h2 {
             font-family: Roboto;
-            font-size: 3.8889vw;
+            font-size: 8.14249vw;
             font-weight: 800;
-            line-height: 4.2778vw;
+            line-height: 8.95674vw;
             color: rgba(255, 255, 255, 1);
+            text-align: center;
         }
 
         .btn {
-            width: 16.18055vw;
+            width: 59.2875vw;
             font-family: Roboto;
-            font-size: 24px;
+            font-size: 6.10687vw;
             font-weight: 700;
-            line-height: 24px;
+            line-height: 6.10687vw;
             letter-spacing: 0.5px;
-            height: 4.444vw;
+            height: 16.285vw;
+            border-radius: 2.0356vw;
         }
     }
 
     .bg {
         padding: 2.1528vw 0 1.666vw 0;
-        background: url('../../images/bestOfBestBg.svg');
+        background: url('../../images/bestOfBestBgMobile.svg');
         background-repeat: no-repeat;
-        background-size: cover;
-        background-size: calc(100% - 82px);
-        background-position: 45px center;
+    
+        background-position: bottom;
 
-        .card {
-            background: rgba(15, 23, 42, 1);
-            border: 1px solid rgba(15, 23, 42, 1);
-            box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
-            box-shadow: 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
+        >.d-flex {
+            flex-direction: column;
 
-            >img {
+            .card {
                 width: 100%;
-                object-fit: cover;
-                margin-bottom: 1.111vw;
-            }
+                background: rgba(15, 23, 42, 1);
+                border: 1px solid rgba(15, 23, 42, 1);
+                box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+                box-shadow: 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
 
-            .card-body {
-
-                >h5 {
-                    color: rgba(255, 255, 255, 1);
+                >img {
+                    width: 100%;
+                    object-fit: cover;
                     margin-bottom: 1.111vw;
-                    font-family: Roboto;
-                    font-size: 1.6667vw;
-                    font-weight: 700;
-                    line-height: 1.8333vw;
                 }
 
-                >p {
-                    color: rgba(255, 255, 255, 1);
-                    margin-bottom: 2.222vw;
-                    font-size: 1.25vw;
-                    font-weight: 400;
-                    line-height: 2vw;
-                }
+                .card-body {
 
-                .btn {
-                    margin-bottom: 1.111vw;
-                    gap: 1.111vw;
-                    border: 2px solid rgba(255, 255, 255, 1);
-                    padding: 1.111vw 0;
-
-                    img {
-                        width: 1.6667vw;
-                        height: 1.6667vw;
+                    >h5 {
+                        color: rgba(255, 255, 255, 1);
+                        margin-bottom: 4.07125vw;
+                        font-family: Roboto;
+                        font-size: 6.10687vw;
+                        font-weight: 700;
+                        line-height: 6.71756vw;
                     }
 
-                    p {
-                        margin: 0;
+                    >p {
                         color: rgba(255, 255, 255, 1);
-                        font-family: Roboto;
-                        font-size: 1.38889vw;
-                        font-weight: 500;
-                        line-height: 1.6667vw;
-                        letter-spacing: 0.5px;
+                        margin-bottom: 4.07125vw;
+                        font-size: 4.58015vw;
+                        font-weight: 400;
+                        line-height: 7.32824vw;
+                    }
+
+                    .btn {
+                        margin-bottom: 4.0713vw;
+                        gap: 4.0713vw;
+                        border: 2px solid rgba(255, 255, 255, 1);
+                        padding: 4.0713vw 0;
+
+                        img {
+                            width: 6.10687vw;
+                            height: 6.10687vw;
+                        }
+
+                        p {
+                            margin: 0;
+                            color: rgba(255, 255, 255, 1);
+                            font-family: Roboto;
+                            font-size: 5.089vw;
+                            font-weight: 500;
+                            line-height: 6.10687vw;
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .bestOfBest {
+        padding: 5.5556vw 0;
+        background: rgba(15, 23, 42, 1);
+
+        .title {
+            margin-bottom: 3.402778vw;
+            flex-direction: row;
+            gap: 0;
+
+            h2 {
+                font-family: Roboto;
+                font-size: 3.8889vw;
+                font-weight: 800;
+                line-height: 4.2778vw;
+                color: rgba(255, 255, 255, 1);
+                text-align: left;
+            }
+
+            .btn {
+                width: 16.18055vw;
+                font-family: Roboto;
+                font-size: 1.6667vw;
+                font-weight: 700;
+                line-height: 1.6667vw;
+                letter-spacing: 0.5px;
+                height: 4.444vw;
+                border-radius: 0.5556vw;
+            }
+        }
+
+        .bg {
+            padding: 2.1528vw 0 1.666vw 0;
+            background: url('../../images/bestOfBestBg.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: calc(100% - 82px);
+            background-position: 45px center;
+
+            >.d-flex {
+                flex-direction: row;
+
+                .card {
+                    width: 27.4076vw;
+                    background: rgba(15, 23, 42, 1);
+                    border: 1px solid rgba(15, 23, 42, 1);
+                    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+                    box-shadow: 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
+
+                    >img {
+                        width: 100%;
+                        object-fit: cover;
+                        margin-bottom: 1.111vw;
+                    }
+
+                    .card-body {
+
+                        >h5 {
+                            color: rgba(255, 255, 255, 1);
+                            margin-bottom: 1.111vw;
+                            font-family: Roboto;
+                            font-size: 1.6667vw;
+                            font-weight: 700;
+                            line-height: 1.8333vw;
+                        }
+
+                        >p {
+                            color: rgba(255, 255, 255, 1);
+                            margin-bottom: 2.222vw;
+                            font-size: 1.25vw;
+                            font-weight: 400;
+                            line-height: 2vw;
+                        }
+
+                        .btn {
+                            margin-bottom: 1.111vw;
+                            gap: 1.111vw;
+                            border: 2px solid rgba(255, 255, 255, 1);
+                            padding: 1.111vw 0;
+
+                            img {
+                                width: 1.6667vw;
+                                height: 1.6667vw;
+                            }
+
+                            p {
+                                margin: 0;
+                                color: rgba(255, 255, 255, 1);
+                                font-family: Roboto;
+                                font-size: 1.38889vw;
+                                font-weight: 500;
+                                line-height: 1.6667vw;
+                                letter-spacing: 0.5px;
+                            }
+                        }
                     }
                 }
             }
