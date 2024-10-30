@@ -1,85 +1,114 @@
 .whyJoinUs {
-    padding: 11.111vw 0;
+    padding: 4.071vw;
     background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
 
     .container-fluid {
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
-        padding: 5.06944vw 5.5556vw;
-        border-radius: 2.0833vw;
+        padding: 8.14249vw 5.402vw;
+        border-radius: 7.63vw;
+        flex-direction: column;
 
         .text {
             flex-direction: column;
-            gap: 1.6667vw;
+            gap: 6.10687vw;
+            margin-bottom: 8.14vw;
 
             h4 {
-                font-size: 56px;
+                font-size: 8.14249vw;
                 font-weight: 800;
-                line-height: 61.6px;
+                line-height: 8.9567vw;
                 color: rgba(15, 23, 42, 1);
+                text-align: center;
             }
 
             .btn {
-                width: 12.43056vw;
+                position: relative;
+                z-index: 999;
+                width: 45.547vw;
+                margin: auto;
                 font-family: Roboto;
-                font-size: 20px;
+                font-size: 5.089vw;
                 font-weight: 500;
-                line-height: 24px;
+                line-height: 6.10687vw;
                 letter-spacing: 0.5px;
                 color: rgba(120, 53, 15, 1);
                 border: 2px solid rgba(120, 53, 15, 1);
-                border-radius: 0.5556vw;
-                padding: 1.11vw;
+                border-radius: 2.0356vw;
+                padding: 4.0713vw;
+            }
+
+
+            .list {
+                .d-flex {
+                    align-items: start;
+                    margin-bottom: 2.0356vw;
+
+                    img {
+                        width: 6.10687vw;
+                        height: auto;
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 4.071vw;
+                        font-weight: 400;
+                        line-height: 5.6998vw;
+                        color: rgba(15, 23, 42, 1);
+                        margin: 0;
+                    }
+                }
             }
         }
 
         .images {
             position: relative;
+            margin-bottom: 14.249vw;
 
             >img {
                 position: absolute;
 
                 &.brown {
-                    width: 6.25vw;
-                    height: 6.25vw;
+                    width: 14.1374vw;
+                    height: auto;
                     top: 1.7361vw;
                     left: -1.388vw;
                 }
 
                 &.rectangle {
-                    width: 46.26944vw;
+                    width: 104.58vw;
                     height: auto;
-                    top: -9.24931vw;
+                    top: -22.24931vw;
                     right: -2.1vw;
                 }
 
                 &.blue {
-                    height: 4.1667vw;
+                    height: 9.4198vw;
                     width: auto;
-                    top: -6.9444vw;
-                    right: 2vw;
+                    top: -9.85vw;
+                    right: 8.076vw;
                 }
 
                 &.purple {
                     bottom: -0.555vw;
-                    right: 5.65vw;
-                    width: 5.1388vw;
-                    height: 5.1388vw;
+                    right: 11.65vw;
+                    width: 11.625vw;
+                    height: auto;
                 }
 
                 &.pink {
-                    right: -6.9444vw;
-                    bottom: -7.56944vw;
-                    width: 15.1388vw;
-                    height: 15.1388vw;
+                    right: -16.9444vw;
+                    bottom: -11.56944vw;
+                    width: 34.2468vw;
+                    height: auto;
                 }
 
                 &.green {
                     z-index: 99;
                     bottom: 0;
-                    left: 4.861111vw;
-                    width: 5.90278vw;
+                    left: 11.861111vw;
+                    width: 12.72vw;
                     height: auto;
                 }
             }
@@ -91,16 +120,123 @@
                 .screen {
                     object-fit: cover;
                     width: auto;
-                    height: 24.30556vw;
+                    height: 59.54vw;
                 }
 
                 .icon {
                     position: absolute;
                     cursor: pointer;
-                    width: 10vw;
+                    width: 36.64vw;
                     left: 50%;
                     top: 52%;
                     transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .whyJoinUs {
+        padding: 11.111vw 0;
+
+        .container-fluid {
+            flex-direction: row;
+            padding: 5.06944vw 5.5556vw;
+            border-radius: 2.0833vw;
+
+            .text {
+                flex-direction: column;
+                gap: 1.6667vw;
+                margin-bottom: 0;
+
+                h4 {
+                    font-size: 3.8889vw;
+                    line-height: 4.2778vw;
+                    text-align: left;
+                }
+
+                .btn {
+                    width: 12.43056vw;
+                    font-family: Roboto;
+                    line-height: 1.6667vw;
+                    border-radius: 0.5556vw;
+                    padding: 1.11vw;
+                    margin: 0;
+                }
+
+                .list {
+                    .d-flex {
+                        align-items: center;
+                        margin-bottom: 0;
+
+                        img {
+                            width: 1.6667vw;
+                        }
+
+                        p {
+                            font-size: 1.389vw;
+                            line-height: 2.5vw;
+                        }
+                    }
+                }
+            }
+
+            .images {
+                margin-bottom: 0;
+
+                >img {
+
+                    &.brown {
+                        width: 6.25vw;
+                        top: 1.7361vw;
+                        left: -1.388vw;
+                    }
+
+                    &.rectangle {
+                        width: 46.26944vw;
+                        top: -9.24931vw;
+                        right: -2.1vw;
+                    }
+
+                    &.blue {
+                        height: 4.1667vw;
+                        top: -6.9444vw;
+                        right: 2vw;
+                    }
+
+                    &.purple {
+                        bottom: -0.555vw;
+                        right: 5.65vw;
+                        width: 5.1388vw;
+                    }
+
+                    &.pink {
+                        right: -6.9444vw;
+                        bottom: -7.56944vw;
+                        width: 15.1388vw;
+                    }
+
+                    &.green {
+                        z-index: 99;
+                        bottom: 0;
+                        left: 4.861111vw;
+                        width: 5.90278vw;
+                    }
+                }
+
+                .video {
+
+                    .screen {
+                        height: 24.30556vw;
+                    }
+
+                    .icon {
+                        width: 10vw;
+                        left: 50%;
+                        top: 52%;
+                        transform: translate(-50%, -50%);
+                    }
                 }
             }
         }
