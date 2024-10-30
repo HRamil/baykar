@@ -2,18 +2,25 @@ footer {
     background: rgba(15, 23, 42, 1);
 
     .container {
-        grid-gap: 3.33vw;
+        gap: 15.267vw;
         border-bottom: 1px solid rgba(51, 65, 85, 1);
+        flex-direction: column;
+        align-items: center;
+
+        &:last-child {
+            gap: 6.10687vw;
+        }
 
         &.copyright {
-            padding: 2.56944vw 0;
+            padding: 6.10687vw 0;
 
             p {
                 font-family: Roboto;
-                font-size: 16px;
+                font-size: 4.07vw;
                 font-weight: 400;
-                line-height: 22.4px;
+                line-height: 5.6997vw;
                 color: rgba(226, 232, 240, 1);
+                margin: 0;
             }
 
             .bottomLinks {
@@ -21,9 +28,9 @@ footer {
 
                 a {
                     font-family: Roboto;
-                    font-size: 1.111vw;
+                    font-size: 4.07vw;
                     font-weight: 400;
-                    line-height: 1.5556vw;
+                    line-height: 5.6997vw;
                     color: rgba(226, 232, 240, 1);
                     text-decoration: none;
 
@@ -34,9 +41,9 @@ footer {
 
                     p {
                         font-family: Roboto;
-                        font-size: 1.111vw;
+                        font-size: 4.07vw;
                         font-weight: 400;
-                        line-height: 1.5556vw;
+                        line-height: 5.6997vw;
                         color: rgba(226, 232, 240, 1);
                         margin: 0;
                     }
@@ -50,55 +57,176 @@ footer {
         }
 
         &.links {
-            padding: 4.16667vw 0 3.9583vw 0;
+            padding: 12.21vw 0;
 
             .col {
                 h3 {
                     font-family: Roboto;
-                    font-size: 1.111vw;
-                    padding: 0.8333vw 0;
+                    font-size: 4.07vw;
+                    padding: 3.053vw 0;
                     font-weight: 500;
-                    line-height: 1.222vw;
+                    line-height: 4.478vw;
                     color: rgba(255, 255, 255, 1);
+                    text-align: center;
                 }
 
                 >a {
                     display: block;
                     text-decoration: none;
                     font-family: Roboto;
-                    padding: 0.8333vw 0;
-                    font-size: 1.111vw;
+                    padding: 3.053vw 0;
+                    font-size: 4.07vw;
                     font-weight: 400;
-                    line-height: 1.5555vw;
+                    line-height: 4.478vw;
                     color: rgba(226, 232, 240, 1);
+                    text-align: center;
                 }
 
                 .storeButtons {
                     flex-direction: column;
-                    gap: 0.8333vw;
-                    margin-bottom: 3.8889vw;
+                    align-items: center;
+                    gap: 2.0356vw;
+                    margin-bottom: 14.249vw;
 
                     img {
-                        height: 3.1944vw;
+                        height: 10.178vw;
+                        width: auto;
                     }
                 }
 
                 h4 {
                     font-family: Roboto;
-                    font-size: 1.111vw;
-                    padding: 0.8333vw 0;
+                    font-size: 4.07vw;
                     font-weight: 500;
-                    line-height: 1.222vw;
+                    line-height: 4.478vw;
                     color: rgba(226, 232, 240, 1);
+                    text-align: center;
                 }
 
                 .soicalLink {
-                    gap: 1.111vw;
+                    gap: 4.07vw;
 
                     a {
                         img {
-                            width: 1.66667vw;
+                            width: 6.10687vw;
                             height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    footer {
+        background: rgba(15, 23, 42, 1);
+
+        .container {
+            grid-gap: 3.33vw;
+            border-bottom: 1px solid rgba(51, 65, 85, 1);
+            flex-direction: row;
+            align-items: normal;
+
+            &.copyright {
+                padding: 2.56944vw 0;
+
+                p {
+                    font-family: Roboto;
+                    font-size: 1.111vw;
+                    font-weight: 400;
+                    line-height: 1.5556vw;
+                    color: rgba(226, 232, 240, 1);
+                }
+
+                .bottomLinks {
+                    gap: 2.222vw;
+
+                    a {
+                        font-family: Roboto;
+                        font-size: 1.111vw;
+                        font-weight: 400;
+                        line-height: 1.5556vw;
+                        color: rgba(226, 232, 240, 1);
+                        text-decoration: none;
+
+                    }
+
+                    .language {
+                        gap: 0.5556vw;
+
+                        p {
+                            font-family: Roboto;
+                            font-size: 1.111vw;
+                            font-weight: 400;
+                            line-height: 1.5556vw;
+                            color: rgba(226, 232, 240, 1);
+                            margin: 0;
+                        }
+
+                        img {
+                            width: 1.6667vw;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            &.links {
+                padding: 4.16667vw 0 3.9583vw 0;
+
+                .col {
+                    h3 {
+                        font-family: Roboto;
+                        font-size: 1.111vw;
+                        padding: 0.8333vw 0;
+                        font-weight: 500;
+                        line-height: 1.222vw;
+                        color: rgba(255, 255, 255, 1);
+                        text-align: left;
+                    }
+
+                    >a {
+                        display: block;
+                        text-decoration: none;
+                        font-family: Roboto;
+                        padding: 0.8333vw 0;
+                        font-size: 1.111vw;
+                        font-weight: 400;
+                        line-height: 1.5555vw;
+                        color: rgba(226, 232, 240, 1);
+                        text-align: left;
+                    }
+
+                    .storeButtons {
+                        flex-direction: column;
+                        gap: 0.8333vw;
+                        margin-bottom: 3.8889vw;
+                        align-items: normal;
+
+                        img {
+                            height: 3.1944vw;
+                        }
+                    }
+
+                    h4 {
+                        font-family: Roboto;
+                        font-size: 1.111vw;
+                        padding: 0.8333vw 0;
+                        font-weight: 500;
+                        line-height: 1.222vw;
+                        color: rgba(226, 232, 240, 1);
+                        text-align: left;
+                    }
+
+                    .soicalLink {
+                        gap: 1.111vw;
+
+                        a {
+                            img {
+                                width: 1.66667vw;
+                                height: auto;
+                            }
                         }
                     }
                 }
