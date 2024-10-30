@@ -1,29 +1,32 @@
 .sliderCard {
-    width: 26.6667vw !important;
-    padding: 3.333vw 2.222vw 2.222vw 2.222vw;
+    position: relative;
+    z-index: 1;
+    width: 81.17vw !important;
+    padding: 6.10687vw;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07);
     border: 1px solid rgba(226, 232, 240, 1);
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    margin: 0 0.833vw;
+    margin: 0 2.0356vw;
     flex-direction: column;
+    justify-content: space-between;
     background: rgba(255, 255, 255, 1);
-    border-radius: 1.3889vw;
-    height: 29.8611vw;
+    border-radius: 5.089vw;
+    height: 75.318vw !important;
 
     .icon {
-        gap: 0.5556vw;
-        margin-bottom: 2.222vw;
+        gap: 2.0356vw;
+        margin-bottom: 6.10687vw;
 
         img {
             width: auto;
-            height: 2.222vw;
+            height: 8.14249vw;
         }
 
         h4 {
             font-family: Roboto;
-            font-size: 1.6667vw;
+            font-size: 6.10687vw;
             font-weight: 700;
-            line-height: 1.8333vw;
+            line-height: 6.717557vw;
             color: rgba(71, 85, 105, 1);
             margin: 0;
         }
@@ -31,38 +34,96 @@
 
     >p {
         font-family: Roboto;
-        font-size: 1.6667vw;
+        font-size: 4.0712468vw;
         font-weight: 400;
-        line-height: 2.6667vw;
+        line-height: 5.6997vw;
         color: rgba(0, 0, 0, 1);
         margin: 0;
-        margin-bottom: 2.222vw;
     }
 
     .userProfile {
         margin-top: auto;
-        gap: 1.111vw;
+        gap: 4.0712468vw;
 
         img {
-            width: 4.444vw;
-            height: 4.444vw;
+            width: 16.2849vw;
+            height: 16.2849vw;
             border-radius: 50%;
         }
 
         h2 {
             font-family: Roboto;
-            font-size: 1.25vw;
+            font-size: 4.58015vw;
             font-weight: 400;
-            line-height: 2vw;
+            line-height: 7.328vw;
             color: rgba(0, 0, 0, 1);
         }
 
         h3 {
             font-family: Roboto;
-            font-size: 1.111vw;
+            font-size: 4.071247vw;
             font-weight: 400;
-            line-height: 1.5556vw;
+            line-height: 5.6997vw;
             color: rgba(71, 85, 105, 1);
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .sliderCard {
+        width: 26.6667vw !important;
+        padding: 3.333vw 2.222vw 2.222vw 2.222vw;
+        margin: 0 0.833vw;
+        flex-direction: column;
+        border-radius: 1.3889vw;
+        height: 29.8611vw !important;
+
+        .icon {
+            gap: 0.5556vw;
+            margin-bottom: 2.222vw;
+
+            img {
+                width: auto;
+                height: 2.222vw;
+            }
+
+            h4 {
+                font-size: 1.6667vw;
+                font-weight: 700;
+                line-height: 1.8333vw;
+                margin: 0;
+            }
+        }
+
+        >p {
+            font-size: 1.6667vw;
+            font-weight: 400;
+            line-height: 2.6667vw;
+            margin: 0;
+            margin-bottom: 2.222vw;
+        }
+
+        .userProfile {
+            margin-top: auto;
+            gap: 1.111vw;
+
+            img {
+                width: 4.444vw;
+                height: 4.444vw;
+                border-radius: 50%;
+            }
+
+            h2 {
+                font-size: 1.25vw;
+                font-weight: 400;
+                line-height: 2vw;
+            }
+
+            h3 {
+                font-size: 1.111vw;
+                font-weight: 400;
+                line-height: 1.5556vw;
+            }
         }
     }
 }

@@ -1,15 +1,14 @@
 .sliderComponents {
     overflow: hidden;
     background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
-    // border: 5px solid rgba(253, 230, 138, 1);
-    padding: 5.5556vw 0;
+    padding: 12.2137vw 0;
 
     .slider-container {
         position: relative;
 
         .sliderBg {
             position: absolute;
-            width: 94.444vw;
+            width: 100%;
             height: 29.2361vw;
             left: 50%;
             top: -2.7778vw;
@@ -18,52 +17,72 @@
         }
     }
 
-
     .title {
-        margin-bottom: 5.5556vw;
+        margin-bottom: 8.14249vw;
+        text-align: center;
 
         h2 {
             font-family: Roboto;
-            font-size: 3.8889vw;
             font-weight: 800;
-            line-height: 4.27778vw;
             color: rgba(15, 23, 42, 1);
+            text-align: center;
+            font-size: 8.14249vw;
+            line-height: 8.9567vw;
         }
     }
-
 
     .customArrow {
-        position: absolute;
-        top: -8.041667vw;
-        z-index: 1;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #A67647;
-        cursor: pointer;
-        width: 3.333vw;
-        height: 3.333vw;
-        border-radius: 50%;
-        border: 2px solid rgba(120, 53, 15, 1);
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.07);
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        display: none;
+    }
+}
 
-        svg {
-            width: 1.6667vw;
+@media (min-width: 900px) {
+    .sliderComponents {
+        padding: 5.5556vw 0;
+
+        .slider-container .sliderBg {
+            width: 94.444vw;
         }
 
-        &.nextArrow {
-            right: 5.55556vw;
+        .title {
+            margin-bottom: 5.5556vw;
+            text-align: left;
+
+            h2 {
+                font-size: 3.8889vw;
+                line-height: 4.27778vw;
+                text-align: left;
+            }
         }
 
-        &.prevArrow {
-            right: 10.5556vw;
+        .customArrow {
+            display: flex;
+            position: absolute;
+            top: -8.041667vw;
+            z-index: 1;
+            background: none;
+            border: 2px solid rgba(120, 53, 15, 1);
+            font-size: 24px;
+            color: #A67647;
+            cursor: pointer;
+            width: 3.333vw;
+            height: 3.333vw;
+            border-radius: 50%;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 1.6667vw;
+            }
+
+            &.nextArrow {
+                right: 5.55556vw;
+            }
+
+            &.prevArrow {
+                right: 10.5556vw;
+            }
         }
     }
-
-
 }

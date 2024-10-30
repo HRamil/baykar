@@ -73,7 +73,15 @@ export default function SliderComponents() {
     variableWidth: true,
     adaptiveHeight: true,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+        }
+      },]
   };
 
   const slides: Slides[] = [
